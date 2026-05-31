@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #334f2b;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #4a6741;
+  --color-on-primary-container: #c2e4b4;
+  --color-secondary: #4a6549;
+  --color-secondary-container: #ccebc7;
+  --color-on-secondary-container: #506b4f;
+  
+  --color-surface: #fbf9f9;
+  --color-surface-dim: #dbdad9;
+  --color-surface-bright: #fbf9f9;
+  --color-surface-lowest: #ffffff;
+  --color-surface-low: #f5f3f3;
+  --color-surface-base: #efeded;
+  --color-surface-high: #e9e8e7;
+  --color-surface-highest: #e4e2e2;
+  
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #434840;
+  --color-outline: #73796f;
+  --color-outline-variant: #c3c8bd;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  
+  --font-headline: "Hanken Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth toggle slider custom CSS */
+.slider-dot {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.habit-card-shadow {
+  box-shadow: 0 1px 3px rgba(51, 79, 43, 0.05);
+}
+
+.active-glow {
+  box-shadow: 0 4px 12px rgba(51, 79, 43, 0.08);
+}
